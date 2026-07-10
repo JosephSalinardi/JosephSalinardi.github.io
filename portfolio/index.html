@@ -9,103 +9,173 @@
 </head>
 
 <body>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
+  <div class="background-grid"></div>
+
+  <nav class="navbar">
+    <div class="logo">JS</div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
-  <header>
-    <div class="hero">
-      <h1>Joseph Salinardi</h1>
-      <h2>Electrical Engineering Student | Embedded Systems | Hardware Projects</h2>
+  <header class="hero">
+    <div class="hero-content">
+      <p class="terminal-line">&gt; initializing portfolio...</p>
 
-      <p>
-        I am an electrical engineering student interested in embedded systems,
-        firmware development, PCB design, electronics troubleshooting, and
-        hands-on engineering projects.
+      <h1>Joseph Salinardi</h1>
+
+      <h2>
+        Electrical Engineering Student<br>
+        Embedded Systems • Hardware • Firmware
+      </h2>
+
+      <p class="hero-text">
+        I build hands-on engineering projects involving embedded systems,
+        PCB design, electronics troubleshooting, firmware, networking,
+        and hardware prototyping.
       </p>
 
-      <div class="buttons">
-        <a href="#projects">View Projects</a>
-        <a class="secondary" href="#contact">Contact Me</a>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-panel">
+      <div class="panel-header">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="code-box">
+        <p><span class="cyan">student</span> = "Electrical Engineering";</p>
+        <p><span class="cyan">focus</span> = "Embedded Systems";</p>
+        <p><span class="cyan">tools</span> = ["C", "Altium", "Python"];</p>
+        <p><span class="cyan">status</span> = "Building";</p>
       </div>
     </div>
   </header>
 
   <main>
-    <section id="about" class="about">
+    <section id="about" class="section">
+      <p class="section-label">01 / ABOUT</p>
       <h2>About Me</h2>
 
       <p>
         I am an Electrical Engineering student at Central Connecticut State
-        University with experience in networking, embedded systems, circuit design,
-        PCB work, and hands-on troubleshooting. I enjoy building real projects,
-        learning how systems work at a low level, and solving practical engineering
-        problems.
+        University with experience in networking, embedded systems, circuit
+        design, PCB work, and hands-on troubleshooting. I enjoy building real
+        projects, learning how systems work at a low level, and solving
+        practical engineering problems.
       </p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section">
+      <p class="section-label">02 / PROJECTS</p>
       <h2>Featured Projects</h2>
 
-      <div class="grid">
-        <div class="card">
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="card-number">01</div>
           <h3>Embedded LED Controller</h3>
           <p>
-            Designed and worked on firmware for LED pattern control using embedded C,
-            GPIO registers, timing logic, and hardware output control.
+            Firmware project involving embedded C, GPIO registers,
+            timing logic, and hardware output control.
           </p>
 
-          <span class="tag">Embedded C</span>
-          <span class="tag">Firmware</span>
-          <span class="tag">GPIO</span>
+          <button class="details-button">More Details</button>
+
+          <p class="project-details">
+            This project focused on direct hardware control, register-level
+            programming, output timing, and LED sequence logic.
+          </p>
+
+          <div class="tags">
+            <span>Embedded C</span>
+            <span>GPIO</span>
+            <span>Firmware</span>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="project-card">
+          <div class="card-number">02</div>
           <h3>PCB Design & Prototyping</h3>
           <p>
-            Worked with schematics, components, voltage regulators, capacitors,
-            MOSFETs, logic ICs, and PCB layout tools for hardware design projects.
+            Hardware design work involving schematics, voltage regulators,
+            capacitors, MOSFETs, logic ICs, and PCB layout.
           </p>
 
-          <span class="tag">PCB Design</span>
-          <span class="tag">Altium</span>
-          <span class="tag">Electronics</span>
+          <button class="details-button">More Details</button>
+
+          <p class="project-details">
+            This included component research, schematic design, layout
+            decisions, troubleshooting, and testing real hardware.
+          </p>
+
+          <div class="tags">
+            <span>Altium</span>
+            <span>PCB Design</span>
+            <span>Electronics</span>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="project-card">
+          <div class="card-number">03</div>
           <h3>Audio Electronics System</h3>
           <p>
-            Built and tested PA/audio setups involving Crown amplifiers, speakers,
-            mixers, signal routing, EQ, and power handling.
+            PA/audio setup involving Crown amplifiers, speakers, mixers,
+            EQ, signal routing, and power handling.
           </p>
 
-          <span class="tag">Audio</span>
-          <span class="tag">Amplifiers</span>
-          <span class="tag">Troubleshooting</span>
+          <button class="details-button">More Details</button>
+
+          <p class="project-details">
+            Worked through amplifier setup, speaker wiring, EQ choices,
+            signal flow, gain staging, and troubleshooting.
+          </p>
+
+          <div class="tags">
+            <span>Audio</span>
+            <span>Amplifiers</span>
+            <span>Troubleshooting</span>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="project-card">
+          <div class="card-number">04</div>
           <h3>Home Engineering Lab</h3>
           <p>
-            Developed a personal electronics workspace for prototyping, testing,
-            PCB work, soldering, and embedded systems development.
+            Personal electronics workspace for soldering, prototyping,
+            testing, PCB work, and embedded systems development.
           </p>
 
-          <span class="tag">Lab Setup</span>
-          <span class="tag">Testing</span>
-          <span class="tag">Prototyping</span>
+          <button class="details-button">More Details</button>
+
+          <p class="project-details">
+            Built around practical engineering work: testing circuits,
+            organizing tools, debugging hardware, and building prototypes.
+          </p>
+
+          <div class="tags">
+            <span>Lab Setup</span>
+            <span>Testing</span>
+            <span>Prototyping</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
+    <section id="skills" class="section">
+      <p class="section-label">03 / SKILLS</p>
+      <h2>Technical Skills</h2>
 
-      <div class="skills-list">
+      <div class="skills-grid">
         <span>Embedded C</span>
         <span>ARM Assembly</span>
         <span>PCB Design</span>
@@ -121,37 +191,45 @@
       </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="section">
+      <p class="section-label">04 / EXPERIENCE</p>
       <h2>Experience</h2>
 
-      <div class="experience-item">
-        <h3>Networking Engineer — Central Connecticut State University</h3>
-        <p>
-          Worked on network installation, switch configuration, patching,
-          troubleshooting, and technical support.
-        </p>
-      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Networking Engineer — CCSU</h3>
+          <p>
+            Worked on network installation, switch configuration, patching,
+            troubleshooting, and technical support.
+          </p>
+        </div>
 
-      <div class="experience-item">
-        <h3>IEEE Club President — CCSU</h3>
-        <p>
-          Helped organize engineering events, student involvement, tours,
-          presentations, and club growth.
-        </p>
+        <div class="timeline-item">
+          <h3>IEEE Club President — CCSU</h3>
+          <p>
+            Helped organize engineering events, student involvement, tours,
+            presentations, and club growth.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section contact-section">
+      <p class="section-label">05 / CONTACT</p>
       <h2>Contact</h2>
 
-      <p>Email: <a href="mailto:joeysalinardi@gmail.com">joeysalinardi@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/joseph-salinardi-2328a5291/" target="_blank">View my LinkedIn</a></p>
-      <p>GitHub: <a href="https://github.com/JosephSalinardi" target="_blank">View my GitHub</a></p>
+      <p>Want to connect or see my work?</p>
+
+      <div class="contact-links">
+        <a href="mailto:joeysalinardi@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/joseph-salinardi-2328a5291/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/JosephSalinardi" target="_blank">GitHub</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Joseph Salinardi. All rights reserved.</p>
+    <p>© 2026 Joseph Salinardi. Built with HTML, CSS, and JavaScript.</p>
   </footer>
 
   <script src="js/script.js"></script>
